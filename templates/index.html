@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Observations of Diabetes Dataset</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .header {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .header a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .observation {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .observation h2 {
+      margin-bottom: 10px;
+    }
+    .observation p {
+      margin-bottom: 5px;
+    }
+    /* Different colors for each observation */
+    .observation:nth-child(odd) {
+      background-color: #f0f0f0; /* Light gray */
+    }
+    .observation:nth-child(even) {
+      background-color: #e0e0e0; /* Lighter gray */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="/">Home</a>
+    <a href="/predictdata">Prediction</a>
+  </div>
+
+  <h1>Detailed Observations of Diabetes Dataset</h1>
+
+  <div class="observation">
+    <h2>Dataset Structure:</h2>
+    <p>The dataset comprises 8 columns, each representing different attributes related to diabetes: pregnancies, glucose level, blood pressure, skin thickness, insulin level, BMI (body mass index), diabetes pedigree function, and age. Among these, 'outcome' is the target variable, indicating whether a patient has diabetes or not, while the others serve as independent variables.</p>
+  </div>
+
+  <div class="observation">
+    <h2>Null Values:</h2>
+    <p>It's noted that there are no missing values (null values) present in the dataset. This suggests that the dataset is complete, and there's no need for imputation or handling missing data.</p>
+  </div>
+
+  <div class="observation">
+    <h2>Outcome Column:</h2>
+    <p>The 'outcome' column provides binary information regarding diabetes status, with approximately 500 instances representing patients without diabetes and the remaining cases indicating patients with diabetes. This indicates that the dataset may be somewhat imbalanced, with a higher proportion of non-diabetic instances.</p>
+  </div>
+
+  <div class="observation">
+    <h2>Age Column:</h2>
+    <p>The 'age' column represents the age of patients, ranging from approximately 20 to 85 years. The majority of individuals fall within the age range of 21 to 30, with around 150 instances. This suggests that the dataset may have a higher representation of younger individuals.</p>
+  </div>
+
+  <div class="observation">
+    <h2>Blood Pressure Column:</h2>
+    <p>The 'blood pressure' column provides measurements of diastolic blood pressure (mm Hg). The majority of individuals exhibit blood pressure readings between 60 to 90, with values ranging from 60 to 140. However, it's important to note that some individuals may have low blood pressure levels as well, indicating variability within the dataset.</p>
+  </div>
+
+  <div class="observation">
+    <h2>Outliers:</h2>
+    <p>Outliers are observations that significantly deviate from the rest of the data. The observation mentions that the 'insulin' column contains maximum outliers, indicating that there are data points with unusually high or low insulin levels compared to the majority of the dataset. Additionally, there may be outliers present in other columns as well, which could impact the statistical analysis and modeling process.</p>
+  </div>
+</body>
+</html>
